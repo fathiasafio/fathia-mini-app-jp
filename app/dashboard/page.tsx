@@ -15,7 +15,6 @@ import WalletConnect from "@/components/WalletConnect"
 import { useAuth } from "@/providers/auth-provider"
 import { useWallet } from "@/providers/wallet-provider"
 import { useContract } from "@/hooks/use-contract"
-import { useMobile } from "@/hooks/use-mobile"
 import { Logo } from "@/components/logo"
 import { IDKitWidget, VerificationLevel } from "@worldcoin/idkit"
 import { Alert, AlertDescription } from "@/components/ui/alert"
@@ -35,7 +34,6 @@ export default function Dashboard() {
     lastTransactionHash,
     resetTransactionHash,
   } = useContract()
-  const isMobile = useMobile()
 
   const [activeTab, setActiveTab] = useState("my-mood")
   const [showVerification, setShowVerification] = useState(false)
