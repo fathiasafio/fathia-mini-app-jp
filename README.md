@@ -1,30 +1,93 @@
-# YouTube video assistance
+# Fathia
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+A decentralized application for recording your mood on the Base blockchain with World ID verification.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/nafisoadanfarah-gmailcoms-projects/v0-you-tube-video-assistance-sj)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/irmzopQ5Qt5)
+## Features
 
-## Overview
+- **Secure Authentication**: Email-based user accounts with wallet connection
+- **Human Verification**: Integration with World ID to verify unique humans
+- **On-chain Mood Recording**: Store your moods permanently on the Base blockchain
+- **Mood History**: View your personal mood history over time
+- **Global Mood Feed**: See what moods others are experiencing around the world
+- **Analytics Dashboard**: Track usage metrics and mood trends
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+## Tech Stack
+
+- **Frontend**: Next.js 14 with App Router, TypeScript, Tailwind CSS, shadcn/ui
+- **Blockchain**: Ethers.js for interaction with Base blockchain
+- **Authentication**: Custom auth provider with wallet integration
+- **Verification**: World ID for human verification
+- **Analytics**: Recharts for data visualization
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- Yarn or npm
+- MetaMask or another Ethereum wallet
+- Base network configured in your wallet
+- Small amount of ETH on Base for gas fees
+
+### Installation
+
+\`\`\`bash
+# Clone the repository
+git clone https://github.com/yourusername/fathia.git
+
+# Navigate to the project directory
+cd fathia
+
+# Install dependencies
+npm install
+
+# Set up environment variables
+cp .env.example .env.local
+# Edit .env.local with your values
+
+# Start the development server
+npm run dev
+\`\`\`
+
+### Environment Variables
+
+Create a `.env.local` file with the following variables:
+
+\`\`\`
+NEXT_PUBLIC_WORLD_ID_APP_ID=app_...
+NEXT_PUBLIC_CONTRACT_ADDRESS=0x...
+\`\`\`
+
+## Usage
+
+1. **Create an Account**: Sign up with email and password
+2. **Connect Wallet**: Connect your Ethereum wallet (MetaMask recommended)
+3. **Verify Identity**: Complete World ID verification
+4. **Set Your Mood**: Choose from various mood options
+5. **View History**: Check your mood history and global moods
 
 ## Deployment
 
-Your project is live at:
+This application is deployed on Vercel. You can deploy your own instance by clicking the button below:
 
-**[https://vercel.com/nafisoadanfarah-gmailcoms-projects/v0-you-tube-video-assistance-sj](https://vercel.com/nafisoadanfarah-gmailcoms-projects/v0-you-tube-video-assistance-sj)**
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/fathia)
 
-## Build your app
+## Contributing
 
-Continue building your app on:
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-**[https://v0.dev/chat/projects/irmzopQ5Qt5](https://v0.dev/chat/projects/irmzopQ5Qt5)**
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-## How It Works
+## License
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Base blockchain for providing the infrastructure
+- World ID for the verification system
+- shadcn/ui for the component library
